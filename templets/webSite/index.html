@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/index.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/common.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/lightslider.css">
+    <!-- using FontAwesome -->
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- javascript -->
+    <script src="{dede:global.cfg_templets_skin/}/js/jQuery v3.6.0.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/lightslider.js"></script>
+    
+</head>
+<body>
+    <!-- content start -->
+    <section class="container">
+        {dede:include filename="head.html"/}
+        <!-- slider start -->
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="design design-img01">
+                    <div class="slide-detail">
+                        <p>Design</p>
+                        <p>Graphic Designing</p>
+                    </div>
+                    <div class="introduction intro-img01"></div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="design design-img02">
+                    <div class="slide-detail">
+                        <p>Design</p>
+                        <p>Graphic Designing</p>
+                    </div>
+                    <div class="introduction intro-img01"></div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="design design-img03">
+                    <div class="slide-detail">
+                        <p>Design</p>
+                        <p>Graphic Designing</p>
+                    </div>
+                    <div class="introduction intro-img03"></div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="design design-img04">
+                    <div class="slide-detail">
+                        <p>Design</p>
+                        <p>Graphic Designing</p>
+                    </div>
+                    <div class="introduction intro-img04"></div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="design design-img05">
+                    <div class="slide-detail">
+                        <p>Design</p>
+                        <p>Graphic Designing</p>
+                    </div>
+                    <div class="introduction intro-img05"></div>
+                </div>
+            </li>
+            <li class="item-a">
+                <div class="design design-img06">
+                    <div class="slide-detail">
+                        <p>Design</p>
+                        <p>Graphic Designing</p>
+                    </div>
+                    <div class="introduction intro-img06"></div>
+                </div>
+            </li>
+        </ul>
+        <!-- slider end -->
+        <!-- graphics start -->
+        <div class="graphic">
+            <!-- graphic-heading -->
+            <div class="g-heading">
+                <span></span>
+                <p>Graphi Design</p>
+            </div>
+            <!-- details -->
+            <div class="g-details">
+                <p>This is graphic design website using html and css.</p> 
+            </div>
+            
+        </div>
+        <!-- graphics end -->
+    </section>
+    <!-- content end -->
+    <!-- service start -->
+    <section class="service">
+        <!-- service-heading start -->
+        <div class="s-heading">
+            <p><a href="{dede:global.cfg_cmspath/}/a/internet/service/index.html">Services</a></p>
+            <p>Our Services,Trems and Conditions</p>
+        </div>
+        <!-- service-heading end -->
+        <!-- service-box-container start -->
+        <div class="s-box-container">
+            <!-- s-box-1 start -->
+            {dede:arclist typeid='23' row='10' titlelen='20' keyword=''}
+            <div class="s-box">
+                <div class="s-icon" style="background-image: url('[field:litpic/]');"></div>
+                <a href="[field:arcurl /]">[field:title /]</a>
+                <p>[field:description function='cn_substr(@me,110)'/]</p>
+                <button class="s-button" onclick="window.location.href='[field:arcurl /]'">Read More</button>
+            </div>
+            {/dede:arclist}
+            <!-- <div class="s-box">
+                <div class="s-icon front-icon"></div>
+                <a href="#">Front End Develop</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="s-button" onclick="location.href='{dede:global.cfg_cmsurl/}/a/internet/Internet1/service/front/index.html'">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="s-box">
+                <div class="s-icon back-icon"></div>
+                <a href="#">Back End</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="s-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="s-box">
+                <div class="s-icon seo-icon"></div>
+                <a href="#">SEO/Security</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="s-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="s-box">
+                <div class="s-icon gui-icon"></div>
+                <a href="#">GUI</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="s-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+        </div>
+        <!-- service-box-container end -->
+    </section>
+    <!-- service end -->
+    <!-- team start -->
+    <div class="team">
+        <!-- t-heading start -->
+        <div class="t-heading">
+            <p><a href="{dede:global.cfg_cmspath/}/a/internet/team/index.html">Team</a></p>
+            <p>This is our Teams members</p>
+        </div>
+        <!-- t-heading end -->
+        <!-- t-box-container start -->
+        <div class="t-box-container">
+            <!-- t-box-1 start -->
+            {dede:arclist typeid='22' row='10' titlelen='20' keyword=''}
+            <div class="t-box">
+                <div class="team-img t-img1" style="background-image: url('[field:litpic/]');"><a href="[field:arcurl /]"></a></div>
+                <div class="t-id">
+                    <a href="[field:arcurl /]">[field:title /]</a>
+                    <p>Graphic Designer</p>
+                </div>
+            </div>
+            {/dede:arclist}
+            <!-- <div class="t-box">
+                <div class="team-img t-img1"></div>
+                <div class="t-id">
+                    <a href="#">Danyal Siddique</a>
+                    <p>Graphic Designer</p>
+                </div>
+            </div> -->
+            <!-- t-box-1 end -->
+            <!-- t-box-2 start -->
+            <!-- <div class="t-box">
+                <div class="team-img t-img2"></div>
+                <div class="t-id">
+                    <a href="#">Danyal Siddique</a>
+                    <p>Graphic Designer</p>
+                </div>
+            </div> -->
+            <!-- t-box-2 end -->
+            <!-- t-box-3 start -->
+            <!-- <div class="t-box">
+                <div class="team-img t-img3"></div>
+                <div class="t-id">
+                    <a href="#">Danyal Siddique</a>
+                    <p>Graphic Designer</p>
+                </div>
+            </div> -->
+            <!-- t-box-3 end -->
+            <!-- t-box-4 start -->
+            <!-- <div class="t-box">
+                <div class="team-img t-img4"></div>
+                <div class="t-id">
+                    <a href="#">Danyal Siddique</a>
+                    <p>Graphic Designer</p>
+                </div>
+            </div> -->
+            <!-- t-box-4 end -->
+        </div>
+        <!-- t-box-container end -->
+    </div>
+    <!-- team end -->
+    <!-- contact us start -->
+    <div class="contact-us">
+        <p>If You Have Any Project In Your Mind.</p>
+        <button class="contact-btn">contact us</button>
+    </div>
+    <!-- contact us end -->
+    <!-- price start -->
+    <section class="price">
+        <!-- price-heading start -->
+        <div class="p-heading">
+            <p><a href="{dede:global.cfg_cmspath/}/a/internet/price/index.html">price</a></p>
+            <p>This is our membership plan you will see chose the best plan.This Site make you design Attractive.</p>
+        </div>
+        <!-- price-heading end -->
+        <!-- price-box-container start -->
+        <div class="p-box-container">
+            <!-- p-box-1 start -->
+            {dede:arclist typeid='21' row='10' titlelen='20' keyword=''}
+            <div class="p-box">
+                <p class="p-box-heading"><a href="[field:arcurl /]">[field:title /]</a></p>
+                <div class="p-monthly">
+                    <a href="[field:arcurl /]">12$</a>
+                    <p>Monthly</p>
+                </div>
+                <p class="p-b-details">Free plan available when you regisration you account</p>
+                <button class="p-button" onclick="window.location.href='[field:arcurl /]'">Start now</button>
+            </div>
+            {/dede:arclist}
+            <!-- <div class="p-box">
+                <p class="p-box-heading"><a href="#">Enterprise Plan</a></p>
+                <div class="p-monthly">
+                    <a href="#">12$</a>
+                    <p>Monthly</p>
+                </div>
+                <p class="p-b-details">Free plan available when you regisration you account</p>
+                <button class="p-button">Start now</button>
+            </div> -->
+            <!-- p-box-1 end -->
+            
+            <!-- p-box-1 start -->
+            <!-- <div class="p-box">
+                <p class="p-box-heading">Enterprise Plan</p>
+                <div class="p-monthly">
+                    <a href="#">12$</a>
+                    <p>Monthly</p>
+                </div>
+                <p class="p-b-details">Free plan available when you regisration you account</p>
+                <button class="p-button">Start now</button>
+            </div> -->
+            <!-- p-box-1 end -->
+            <!-- p-box-1 start -->
+            <!-- <div class="p-box">
+                <p class="p-box-heading">Enterprise Plan</p>
+                <div class="p-monthly">
+                    <a href="#">12$</a>
+                    <p>Monthly</p>
+                </div>
+                <p class="p-b-details">Free plan available when you regisration you account</p>
+                <button class="p-button">Start now</button>
+            </div> -->
+            <!-- p-box-1 end -->
+            <!-- p-box-1 start -->
+            <!-- <div class="p-box">
+                <p class="p-box-heading">Enterprise Plan</p>
+                <div class="p-monthly">
+                    <a href="#">12$</a>
+                    <p>Monthly</p>
+                </div>
+                <p class="p-b-details">Free plan available when you regisration you account</p>
+                <button class="p-button">Start now</button>
+            </div> -->
+            <!-- p-box-1 end -->
+        </div>
+        <!-- price-box-container end -->
+    </section>
+    <!-- price end -->
+    {dede:include filename="footer.html"/}
+    
+</body>
+<!-- javascript -->
+<script src="{dede:global.cfg_templets_skin/}/js/script.js"></script>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/common.css">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/article.css">
+    <!-- using FontAwesome -->
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- javascript -->
+    <script src="{dede:global.cfg_templets_skin/}/js/jQuery v3.6.0.js"></script>
+    
+</head>
+<body>
+    {dede:include filename="head.html"/}
+    <section class="service-banner"></section>
+    <!-- service start -->
+    <section class="service">
+        <!-- service-heading start -->
+        <div class="sf-heading">
+            <!-- <p>Front End Develop</p> -->
+            <p>{dede:field.typename /}</p>
+
+            {dede:sql sql='Select content from dede_arctype  where id=~typeid~'} 
+            <p>[field:content  function='cn_substr(html2text(@me),524)'/]</p>
+            {/dede:sql}
+            
+            </div>
+        <!-- service-heading end -->
+        <!-- service-box-container start -->
+        <div class="sf-box-container">
+            <!-- s-box-1 start -->
+            <div class="sf-box">
+                <div>
+                    {dede:field.body/}
+                </div>
+            </div>
+            <!-- s-box-1 end -->
+        </div>
+        <!-- service-box-container end -->
+    </section>
+    <!-- service end -->
+    
+    <!-- footer start -->
+    {dede:include filename="footer.html"/}
+    <!-- footer end -->
+    
+</body>
+</html>

@@ -1,0 +1,55 @@
+<section class="list-article">
+        <!-- service-heading start -->
+        <div class="l-heading">
+            <!-- <p>Services</p> -->
+            <p><a href="{dede:field name='typeurl' /}">{dede:field name='typename'/}</a></p>
+            <p>Our Services,Trems and Conditions</p>
+        </div>
+        <!-- service-heading end -->
+        <!-- service-box-container start -->
+        <div class="l-box-container">
+            <!-- s-box-1 start -->
+            {dede:channel type='son' noself='yes'} 
+                <div class="l-box">
+                    <div class="l-icon front-icon"></div>
+                    <a href="[field:typelink/]">[field:typename/]</a>
+                    <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                    <button class="l-button" onclick="window.location.href='[field:typelink/]'">Read More</button>
+                </div>
+            {/dede:channel} 
+                
+            
+            <!-- <div class="l-box">
+                <div class="l-icon front-icon"></div>
+                <a href="#">Front End Develop</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="l-box">
+                <div class="l-icon back-icon"></div>
+                <a href="#">Back End</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="l-box">
+                <div class="l-icon seo-icon"></div>
+                <a href="#">SEO/Security</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="l-box">
+                <div class="l-icon gui-icon"></div>
+                <a href="#">GUI</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+        </div>
+        <!-- service-box-container end -->
+    </section>

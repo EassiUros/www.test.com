@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/common.css">
+    <link rel="stylesheet" type="text/css" id="style">
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/lightslider.css">
+    <!-- using FontAwesome -->
+    <link rel="stylesheet" href="{dede:global.cfg_templets_skin/}/css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!-- javascript -->
+    <script src="{dede:global.cfg_templets_skin/}/js/jQuery v3.6.0.js"></script>
+    <script src="{dede:global.cfg_templets_skin/}/js/lightslider.js"></script>
+    
+</head>
+<body>
+    {dede:include filename="head.html"/}
+    <!-- service start -->
+    <section class="list-article">
+        <!-- service-heading start -->
+        <div class="l-heading">
+            <!-- <p>Services</p> -->
+            <p>
+                {dede:type}
+                    [field:typename/]
+                {/dede:type}
+            </p>
+            <p>{dede:field.content/}</p>
+        </div>
+        <!-- service-heading end -->
+        <!-- service-box-container start -->
+        
+        <div class="l-box-container">
+            <!-- s-box-1 start -->
+            <!-- {dede:arclist row="4"}
+            <div class="l-box">
+                <div class="l-icon front-icon"></div>
+                <a href="[field:arcurl /]">[field:title /]</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button" onclick="window.location.href='[field:arcurl /]'">Read More</button>
+            </div>
+            {/dede:arclist} -->
+            <!-- <ul>
+            {dede:list perpage='20'}
+                <li>      				
+                    <h3><a href="[field:arcurl/]" target="_blank">[field:title/]</a></h3>
+                    <p>[field:description/]...</p>
+                    <span>
+                        <a href="[field:arcurl/]">[field:global.cfg_basehost/][field:arcurl/]</a>
+                        <small>分类：</small><a href="[field:typeurl/]" target="_blank">[field:typename/]</a>
+                        <small>点击：</small>[field:click/]
+                        <small>日期：</small>[field:stime/]
+                    </span>
+                </li>
+            {/dede:list}
+            </ul>
+            <div class="fl dede_pages">
+            <ul class="pagelist">
+                {dede:pagelist listsize='4'/}  
+            </ul> -->
+
+            <header class="page-header">
+                <h1 class="page-title">您搜索的关键字: <span>{dede:global name='keyword' function='RemoveXSS(@me)'/}</span></h1>
+            </header>
+
+            <div class="result_content">
+                <div class="sidebar">
+                    <div class="sidebar_banner">
+                        <script src='{dede:global.cfg_cmsurl/}/plus/ad_js.php?aid=16' language='javascript'></script>
+                    </div>
+                </div>
+                <div class="resultlist">
+                    <ul>
+                        {dede:list perpage='4'}
+                        <li class="koko" style="padding: 10px">
+                            <h3>
+                                <a href="[field:arcurl/]" target="_blank">[field:title/]</a>
+                            </h3>
+                            <p>[field:description/]...</p>
+                            <span>
+                                <small>链接：</small><a href="[field:arcurl/]">[field:global.cfg_basehost/][field:arcurl/]</a>
+                                <small>分类：</small><a href="[field:typeurl/]" target="_blank">[field:typename/]</a>
+                                <small>点击：</small>[field:click/]
+                                <small>日期：</small>[field:stime/]
+                            </span>
+                            <div style="border-bottom: 1px grey dashed;margin-top: 10px;"></div>
+                        </li>
+                        {/dede:list}
+                    </ul>
+                    <div class="fl dede_pages" style="padding: 10px;margin-top: 20px;font-size: 14px;">
+                        <ul class="pagelist">
+                            {dede:pagelist listsize='4'/}
+                        </ul>
+                    </div>                    
+                </div>              
+            </div>
+
+            <!-- <div class="l-box">
+                <div class="l-icon front-icon"></div>
+                <a href="#">Front End Develop</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="l-box">
+                <div class="l-icon back-icon"></div>
+                <a href="#">Back End</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="l-box">
+                <div class="l-icon seo-icon"></div>
+                <a href="#">SEO/Security</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+            <!-- s-box-1 start -->
+            <!-- <div class="l-box">
+                <div class="l-icon gui-icon"></div>
+                <a href="#">GUI</a>
+                <p>This website is best for your website make plan and this website pro10 /10 website services that other website not provide.</p>
+                <button class="l-button">Read More</button>
+            </div> -->
+            <!-- s-box-1 end -->
+        </div>
+        <!-- service-box-container end -->
+    </section>
+    <!-- service end -->
+    <!-- footer start -->
+    {dede:include filename="footer.html"/}
+    <!-- footer end -->
+    
+</body>
+<!-- javascript -->
+<script src="{dede:global.cfg_templets_skin/}/js/script.js"></script>
+<script>
+    var url = "{dede:global.cfg_templets_skin/}/css/"; 
+    document.getElementById("style").href = "{dede:field name='typename'/}" == "team"? url + "team.css": url + "serve.css"
+</script>
+
+</html>

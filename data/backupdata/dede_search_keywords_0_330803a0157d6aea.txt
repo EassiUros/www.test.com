@@ -1,0 +1,9 @@
+INSERT INTO `dede_search_keywords` VALUES('1','vpn','vpn','2','0','1625237153','0','0');
+INSERT INTO `dede_search_keywords` VALUES('2','请输入您要查找的内容/项','请输入您要查找的内容/项 内容 查找 输入','1','0','1625236867','0','0');
+INSERT INTO `dede_search_keywords` VALUES('3','Tab Hibernation','Tab Hibernation Hibernation','1','0','1625237182','0','0');
+INSERT INTO `dede_search_keywords` VALUES('4','team','team','9','0','1625409342','0','0');
+INSERT INTO `dede_search_keywords` VALUES('5','Front develop','Front develop Front develop','13','1','1625323006','0','0');
+INSERT INTO `dede_search_keywords` VALUES('6','back','back','2','1','1625409324','0','0');
+INSERT INTO `dede_search_keywords` VALUES('7','website','website','5','0','1625409346','0','0');
+INSERT INTO `dede_search_keywords` VALUES('8','Search something here...','Search something here... Search here... something','2','0','1625321643','0','0');
+INSERT INTO `dede_search_keywords` VALUES('9','bae','bae','1','0','1625409339','0','0');

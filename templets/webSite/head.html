@@ -1,0 +1,20 @@
+<!-- nav start -->
+<nav>
+    <!-- <div class="menu">
+        <a href='{dede:global.cfg_cmsurl/}/page/list.html'><span>icon</span></a>
+        <a href="#">Going to internet</a>
+        <a href="#">Website design</a>
+    </div>
+    <a href="#" class="sign-in">sign in</a> -->
+    <div class="menu">
+        <!-- <a href='{dede:global.cfg_cmsurl/}/'><span>主页</span></a>
+        {dede:channel type='top' row='10' currentstyle="<li class='hover'><a href='~typelink~' ~rel~><span>~typename~</span></a></li>"}
+        <a href='[field:typeurl/]' [field:rel/]><span>[field:typename/]</span></a>
+        {/dede:channel} -->
+            <a href='{dede:global.cfg_cmsurl/}/'>icon</a>
+            {dede:channel type='top' row='10' currentstyle="<a href='~typelink~' ~rel~>~typename~</a>"}
+            <a href='[field:typeurl/]' [field:rel/]>[field:typename/]</a>
+            {/dede:channel}
+    </div>
+</nav>
+<!-- nav end -->
